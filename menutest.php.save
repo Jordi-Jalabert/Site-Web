@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="menuCSS.css">
+
+    <!-- Ceci est un commentaire -->
+    <html lang="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
+   <title>Kokuryùkai</title>
+</head>
+    <body>
+<p>
+<ul id="menu-deroulant">
+	<li><a href="#">Manga/Animé</a>
+		<ul>
+			<li><a href="#">Aceuil</a></li>
+			<li><a href="#">Animé</a></li>
+			<li><a href="#">LEXIQUE</a></li>
+			<li><a href="#">Beta Test</a></li>
+		<
+</p>
+
+
+<p>
+
+
+ --><li><a href="#">Jeux video</a>
+		<ul>
+			<li><a href="#">Lien sous menu 2</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
+		</ul>
+	</li>
+</ul>
+</p>

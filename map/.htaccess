@@ -1,0 +1,4 @@
+AuthName "IDENTIFIEZ VOUS !"
+AuthType Basic
+AuthUserFile "/home/jordi/www/map/.htpasswd"
+Require valid-user

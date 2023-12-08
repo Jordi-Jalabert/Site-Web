@@ -1,0 +1,62 @@
+<?php
+session_start(); //on commence une session
+?>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://78.220.137.171/jordi/index.php">
+<html xmlns="http://78.220.137.171/jordi/index.php" xml:lang="fr" >
+   <head>
+       <title>Kokurùkai,connexion</title>
+       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   </head>
+<?php
+if (isset($_POST['nom_utilisateur']) AND isset($_POST['mot_de_passe'])) //si l'utilisateur a posté un mot de passe
+{
+    mysql_connect('sql.olympe-network.com','alaoza','z.ala1'); //connexion à la bdd
+    mysql_select_db('alaoza_test');
+     
+    $nom_utilisateur = htmlspecialchars($_POST['nom_utilisateur']);
+    $mot_de_passe = md5($_POST['mot_de_passe']);//on crypte le mot de passe
+             
+    $requete_ident = mysql_query("SELECT * FROM utilisateurs WHERE nom_utilisateur='".$nom_utilisateur."'") or die (mysql_error());
+     
+    $identification = mysql_fetch_array($requete_ident);
+     
+    if ($identification['nom_utilisateur']==$nom_utilisateur AND $identification['mot_de_passe']==$mot_de_passe) //et on le compare au nom d'utilisateur et mot de passe stocké dans la bdd
+    {
+        $_SESSION['nom_utilisateur'] = $identification['nom_utilisateur'];
+        $_SESSION['connecté']=1;
+        echo 'vous êtes connectés, cliquez <a h">ici</a> pour revenir à la page d\'index.php';
+    }
+    else //s'ils ne correspondent pas, afficher un message d'erreur
+    {
+        echo 'nom d\'utilisateur ou mot de passe éronné, veuillez réessayer <br />';
+?>
+     
+    <body>
+        <form method="post" action="connexion.php">
+            <label>Nom d'utilisateur : </label><input name="nom_utilisateur" type="text" /><br />
+            <label>Mot de Passe : </label><input name="mot_de_passe" type="password" />
+            <input type="submit" value="valider" />
+        </form>
+    </body>
+<?php
+    }
+     
+}
+else
+{
+?>
+   <body>
+        <h2>Bienvenue dans la page d'identification</h2>
+ 
+         
+        <form method="post" action="connexion.php">
+            <label>Nom d'utilisateur : </label><input name="nom_utilisateur" type="text" /><br />
+            <label>Mot de Passe : </label><input name="mot_de_passe" type="password" />
+            <input type="submit" value="valider" />
+        </form>
+    </body>
+<?php
+}
+?>
+</html>

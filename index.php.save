@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS.css">
+
+    <!-- Ceci est un commentaire -->
+    <html lang="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
+   <title>Kokuryùkai</title>
+</head>
+    <body>
+     <!-- Corps de la page -->
+       <h1>Kokuryùkai</h1>
+       
+<p>
+
+       <select name="selection" onchange="document.location.href = this.options[this.selectedIndex].value;">
+    <option selected="selected">Faites votre choix</option>
+    <option value="page1.php">Informations individu</option>
+    <option value="page2.php">Comparatif</option>
+</select>  <a href="index2.php">Animé</a> 
+ </p> 
+      <p>    <a  href="index3.php">LEXIQUE</a>  
+
+
+      </p>
+
+       <p class="introduction">Bonjour et bienvenue sur mon site !</p>
+	
+       <p>A quoir sert ce site ?<br />
+        Il te fera découvir le monde des Animés est des jeux vidéos version manga.
+
+        Ceci est mon premier test alors <strong>soyez indulgents</strong> s'il vous plait, j'apprends petit Ã  petit
+          comment cela marche.</p>
+      <p>
+         Pour l'instant c'est un peu vide, mais revenez dans 2-3 jours quand j'aurai appris un peu plus de choses, je vous assure que vous allez être surpris !</p>
+
+       <h2>Le monde des animés</h2>
+
+
+          <p>Kokuryùkai: vous propose de découvir de nouveaux mondes <strong>destinés aux débutants</strong> :
+ </p>
+ 	
+ <p>  aucune connaissance n'est requise pour lire ces mondes !
+ </p> 
+
+ <p>  Vous pourrez ainsi apprendre, sans rien y connaître auparavant.
+         
+        </p>
+         
+        <p> 
+
+         <h2>Une communauté active</h2>
+
+          <p>Vous avez un problème, un élément du cours que vous ne comprenez pas ? Vous avez besoin d'aide pour comprendre c'est quoi un animé ou pour autre choses ?<br />
+ </p> 
+             
+     <p>          Rendez-vous sur les forums où sur notre discord : 
+          </p>
+
+ <p> Vous y découvrirez que vous n'êtes pas le seul dans ce cas et vous trouverez très certainement quelqu'un qui vous aidera aimablement à résoudre votre problème.</p>
+            </p>
+
+ 
+           <p>  <a href="https://discord.gg/dAyqn7"target="_blank" title="le discord">
+            https://discord.gg/fSG4R4E
+              </p> 
+
+	<p> <a href="http://kokuryukai.forumactif.com/"target="_blank" title="Forum">
+     http://kokuryukai.forumactif.com/
+</p>    

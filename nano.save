@@ -1,0 +1,17 @@
+imé
+}
+
+body{
+background-image: url('http://agence-autrement.com/wp-content/uploads/2014/12/AWD_3D_-3Fond_1900.jpg');
+ackground-color:white;
+background-repeat: no-repeat ;
+
+}
+
+h1,h2,p{
+  color:;
+}
+a{
+  color:bleu;
+
+
